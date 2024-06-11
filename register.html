@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.min.css">
@@ -14,7 +14,7 @@
 <div>
   
   <!-- register form in the middle of the screen with the following fields: username, email, password, password confirm, list of countries to select from (atleast ten) add a floating label to all of the fields and make the password confirm work properly-->
-  <form class="container" style="width: 50%; margin-top: 10%;" action="register.php" method="POST">
+  <form class="container" style="width: 50%; margin-top: 10%;" action="index.html" method="POST">
     <h1 class="h1 mb-3">Register</h1>
     <div class="form-floating mb-3">
       <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
@@ -25,7 +25,7 @@
       <label for="email">Email</label>
     </div>
     <div class="form-floating mb-3">
-      <input type="password" class="form-control" id="password" name="password" placeholder="password" required onkeyup="check()">
+      <input type="password" class="form-control" id="password" name="password" placeholder="password" required onkeyup="check()" minlength="7">
       <label for="password" class="form-label">Password</label>
     </div>
     <div class="form-floating mb-3">
@@ -34,7 +34,7 @@
     </div>
     <span id="message" class="mb-1"></span>
     <div class="mb-3 mt-3">
-      <select class="form-select" id="country" name="country">
+      <select class="form-select" id="country" name="country" required>
         <option disabled selected value="0">Select a country</option>
         <option value="1">Switzerland</option>
         <option value="2">Germany</option>
