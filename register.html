@@ -10,6 +10,44 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-
+<div>
+  
+  <!-- register form in the middle of the screen with the following fields: username, email, password, password confirm, list of countries to select from (atleast ten) add a floating label to all of the fields and make the password confirm work properly-->
+  <form class="container" style="width: 50%; margin-top: 10%;" action="register.php" method="POST">
+    <h1 class="h1 mb-3">Register</h1>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="username" name="username" placeholder="username">
+      <label for="username" class="form-label">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="email" name="email" placeholder="email">
+      <label for="email">Email</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="password" name="password" placeholder="password">
+      <label for="password" class="form-label">Password</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Password Confirm">
+      <label for="passwordConfirm" class="form-label">Password Confirm</label>
+    </div>
+    <div class="mb-3">
+      <label for="country" class="form-label">Country</label>
+      <select class="form-select" id="country" name="country">
+        <option disabled selected value="0">Select a country</option>
+        <option value="1">Switzerland</option>
+        <option value="2">Germany</option>
+        <option value="3">Austria</option>
+        <option value="4">France</option>
+        <option value="5">Italy</option>
+        <option value="6">Spain</option>
+        <option value="7">Portugal</option>
+        <option value="8">Netherlands</option>
+        <option value="9">Belgium</option>
+        <option value="10">Luxembourg</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</div>
 </body>
 </html>
