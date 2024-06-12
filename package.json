@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "bootstrap-multiselect": "^1.1.0",
-    "font-awesome": "^4.7.0"
+    "tinymce": "^7.1.2"
   }
 }

@@ -7,39 +7,94 @@
     <title>Contact</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.min.css">
-    <script src="node_modules/bootstrap-multiselect/dist/js/bootstrap-multiselect.min.js"></script>
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.tiny.cloud/1/14sihm1rlx0cyel8z3kvv0twkam4tdihaw8kt9aw6cmxhnoe/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Shein.ico" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home
-                  <span class="visually-hidden">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <div class="flex-column">
-              <a class="btn btn-primary" href="register.html">Register</a>
-              <a class="btn btn-secondary" href="login.html">Login</a>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="factories.html">Factories</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+            <span class="visually-hidden">(current)</span>
+        </li>
+        </ul>
+        <div class="flex-column">
+        <a class="btn btn-primary" href="register.html">Register</a>
+        <a class="btn btn-secondary" href="login.html">Login</a>
         </div>
-      </nav>
+    </div>
+    </div>
+  </nav>
+  <div class="w-50 container mt-3">
+    <form action="#">
+      <h1 class="h1">Contact us</h1>
+      <!-- text input for name with a floating label; a select with options for issues one might have with shopping online (i.e. refunds, order tracking, etc) -->
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <select class="form-select" id="issue" aria-label="Issue" required>
+          <option selected disabled>Choose an issue</option>
+          <option value="0">Refunds</option>
+          <option value="1">Order Tracking</option>
+          <option value="2">Support with product</option>
+          <option value="3">Other</option>
+        </select>
+        <label for="issue">Issue</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="issuespec" placeholder="Specify your issue" required>
+        <label for="issuespec">Specify your issue</label>
+      </div>
+      <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'emoticons charmap wordcount spellchecker a11ychecker typography',
+          toolbar: 'undo redo | bold italic underline strikethrough | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+          menubar: false
+        });
+      </script>
+      <textarea>
+        Type your message here...
+      </textarea>
+      <button type="submit" class="btn btn-outline-success mt-2">Send</button>
+      <button type="reset" class="btn btn-danger mt-2">Clear</button>
+    </form>
+  </div>
+  <footer class="fixed-bottom bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 pt-3">
+          <p class="p-0 m-0">Authors:</p>
+          <p class="p-0 m-0">Tomáš Kotuč</p>
+          <p class="p-0 m-0">Fabian Schlatter</p>
+        </div>
+        <div class="col-4 text-center pt-5">
+          <p>&copy; 2009-2024 SHEIN All Rights Reserved.</p>
+        </div>
+        <div class="col-4 text-center pt-3">
+          <p><a class="link-light" href="https://github.com/mentos120/WebProjektKotucSchlatter" target="_blank" rel="noopener noreferrer"><i class="fa fa-solid fa-github"></i> GitHub</a></p>
+          <p><i class="fa fa-solid fa-file"></i> <a class="link-light" href="#" target="_blank" rel="noopener noreferrer">Documentation</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

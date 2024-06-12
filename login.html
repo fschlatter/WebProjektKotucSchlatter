@@ -5,29 +5,43 @@
     <title>Login</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap-multiselect/dist/css/bootstrap-multiselect.min.css">
-    <script src="node_modules/bootstrap-multiselect/dist/js/bootstrap-multiselect.min.js"></script>
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.tiny.cloud/1/14sihm1rlx0cyel8z3kvv0twkam4tdihaw8kt9aw6cmxhnoe/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Shein.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container mt-3">
-        <h2 class="offset-4 col-">Log in</h2>
+    <div >
+        <form class="container" style="max-width: 40rem; margin-top: 10%;" action="index.html">
+            <h2 class="h1 mb-3">Log in</h2>
+            <div class="form-floating ">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                <label for="email">Username</label>
+            </div>
+            <div class="form-floating mt-2 mb-2">
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                <label for="email">Password</label>
+            </div>
+            <button type="submit" class="btn btn-outline-success " id="submit_btn">Submit</button>
+            <a href="index.html"><button type="button" class="btn btn-danger">Back</button></a>
         </form>
-        <div class="container mt-3">
-            <div class="offset-4 col-4">    
-            <form action="index.html">
-                <div class="form-floating ">
-                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                    <label for="email">Username</label>
-                </div>
-                <div class="form-floating mt-2 mb-2">
-                    <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
-                    <label for="email">Password</label>
-                </div>
-                <button type="submit" class="btn btn-outline-success " id="submit_btn">Submit</button>
-                <a href="index.html"><button type="button" class="btn btn-danger">Back</button></a>
-            </form>
+    </div>
+    <footer class="fixed-bottom bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 pt-3">
+              <p class="p-0 m-0">Authors:</p>
+              <p class="p-0 m-0">Tomáš Kotuč</p>
+              <p class="p-0 m-0">Fabian Schlatter</p>
+            </div>
+            <div class="col-4 text-center pt-5">
+              <p>&copy; 2009-2024 SHEIN All Rights Reserved.</p>
+            </div>
+            <div class="col-4 text-center pt-3">
+              <p><a class="link-light" href="https://github.com/mentos120/WebProjektKotucSchlatter" target="_blank" rel="noopener noreferrer"><i class="fa fa-solid fa-github"></i> GitHub</a></p>
+              <p><i class="fa fa-solid fa-file"></i> <a class="link-light" href="#" target="_blank" rel="noopener noreferrer">Documentation</a></p>
+            </div>
+          </div>
         </div>
-        </div>
+      </footer>
 </body>
 </html>
