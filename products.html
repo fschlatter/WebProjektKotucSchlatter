@@ -1,62 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.tiny.cloud/1/14sihm1rlx0cyel8z3kvv0twkam4tdihaw8kt9aw6cmxhnoe/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="Shein.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdn.tiny.cloud/1/14sihm1rlx0cyel8z3kvv0twkam4tdihaw8kt9aw6cmxhnoe/tinymce/7/tinymce.min.js"
+    referrerpolicy="origin"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="shortcut icon" href="Shein.ico" type="image/x-icon">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link " href="index.html">Home
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="products.html">Products</a>
-                <span class="visually-hidden">(current)</span>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="factories.html">Factories</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            </ul>
-            <div class="flex-column">
-            <a class="btn btn-primary" href="register.html">Register</a>
-            <a class="btn btn-secondary" href="login.html">Login</a>
-            </div>
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="products.html">Products</a>
+            <span class="visually-hidden">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="factories.html">Factories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="flex-column">
+          <a class="btn btn-primary" href="register.html">Register</a>
+          <a class="btn btn-secondary" href="login.html">Login</a>
         </div>
-        </div>
-    </nav>
-    <footer class="fixed-bottom bg-dark text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-4 pt-3">
-              <p class="p-0 m-0">Authors:</p>
-              <p class="p-0 m-0">Tomáš Kotuč</p>
-              <p class="p-0 m-0">Fabian Schlatter</p>
-            </div>
-            <div class="col-4 text-center pt-5">
-              <p>&copy; 2009-2024 SHEIN All Rights Reserved.</p>
-            </div>
-            <div class="col-4 text-center pt-3">
-              <p><a class="link-light" href="https://github.com/mentos120/WebProjektKotucSchlatter" target="_blank" rel="noopener noreferrer"><i class="fa fa-solid fa-github"></i> GitHub</a></p>
-              <p><i class="fa fa-solid fa-file"></i> <a class="link-light" href="#" target="_blank" rel="noopener noreferrer">Documentation</a></p>
-            </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/shein dress.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">SHEIN LUNE Women's Solid Color Round Neck Batwing Sleeve Dress</p>
+            <a href="https://euqs.shein.com/SHEIN-LUNE-Women-s-Round-Neck-Batwing-Sleeve-Solid-Color-Dress-p-31487991.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_2%60ps%3D5_2%60jc%3Dreal_12472&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=3-4"
+              target="_blank" class="btn btn-primary">View</a>
           </div>
         </div>
-      </footer>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/socks.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">Essential Ankle Socks , Soft & Lightweight Full Length Low Cut</p>
+            <a href="https://euqs.shein.com/1-5-10-Pair-Essential-Ankle-Socks-Soft-Lightweight-All-Match-Low-Cut-Ankle-Socks-Women-s-Stockings-Hosiery-p-28463806.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=1-1" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/case.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text"> Waterproof Phone Cover , Touch Screen , Swimming , Drifting</p>
+            <a href="https://euqs.shein.com/Night-Luminous-Waterproof-Phone-Case-Touch-Screen-Unlocking-Swimming-Drifting-Transparent-Phone-Bag-Sealed-Phone-Cover-p-30350928.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=3-4" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/pistol.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">Massage Gun Deep Tissue Percussion Massage Tools Portable</p>
+            <a href="https://euqs.shein.com/Massage-Gun-Deep-Tissue-Percussion-Massager-Massage-Tools-Portable-8-Replacement-Heads-Body-Back-Massager-Devic-Vibrator-Musculo-LCD-Monitor-Masajeador-p-36431006.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=1-1" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/bra.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">Yoga Sxy Exposed Back Crisscross Solid Color Women's Sports Bra</p>
+            <a href="https://euqs.shein.com/Yoga-Sxy-Crisscross-Back-Sports-Bra-p-15467797.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=3-4" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/cap.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">1 Pcs Outdoor Sport Vintage Ripped Cap With Printed Lettering</p>
+            <a href="https://euqs.shein.com/1pc-Outdoor-Sports-Vintage-Distressed-Baseball-Cap-With-Printed-Letter-boston-And-Curved-Brim-p-27985236.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=3-4" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/selfdefense.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">1pc unisex self-defense weapon, outdoor equipment</p>
+            <a href="https://euqs.shein.com/1pc-Unisex-Self-Defense-Weapon-Outdoor-Gear-Multi-Functional-Portable-Car-Glass-Breaker-Escape-Keychain-p-35050087.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=3-4" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/hoodie.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">SHEIN EZwear Graphic with flowers and slogan Drawstring</p>
+            <a href="https://euqs.shein.com/SHEIN-EZwear-Floral-Slogan-Graphic-Drawstring-Thermal-Lined-Hoodie-p-25460258.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=3-4" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-4 col-xl-3 pb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="img/keychain.png" class="card-img-top" width="250" height="300" alt="...">
+          <div class="card-body">
+            <p class="card-text">un Meme Im Just A Girl Sad Hamster Keyring</p>
+            <a href="https://euqs.shein.com/Fun-Meme-Im-Just-A-Girl-Sad-Hamster-Key-Chain-Keychains-Ring-For-Accessories-Bag-Funny-Pendant-Keyring-Jewelry-Fans-Gifts-p-35318015.html?src_identifier=on%3DIMAGE_COMPONENT%60cn%3Dshopbycate%60hz%3DhotZone_12%60ps%3D5_12%60jc%3DitemPicking_017185553&src_module=All&src_tab_page_id=page_home1718439907314&mallCode=1&pageListType=4&imgRatio=1-1" target="_blank"
+              class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <footer class="fixed-bottom bg-dark text-white">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-4 pt-3">
+            <p class="p-0 m-0">Authors:</p>
+            <p class="p-0 m-0">Tomáš Kotuč</p>
+            <p class="p-0 m-0">Fabian Schlatter</p>
+          </div>
+          <div class="col-4 text-center pt-5">
+            <p>&copy; 2009-2024 SHEIN All Rights Reserved.</p>
+          </div>
+          <div class="col-4 text-center pt-3">
+            <p><a class="link-light" href="https://github.com/mentos120/WebProjektKotucSchlatter" target="_blank"
+                rel="noopener noreferrer"><i class="fa fa-solid fa-github"></i> GitHub</a></p>
+            <p><i class="fa fa-solid fa-file"></i> <a class="link-light" href="#" target="_blank"
+                rel="noopener noreferrer">Documentation</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
+
 </html>
